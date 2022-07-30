@@ -31,10 +31,21 @@ class ViewController: UIViewController {
 
 
         self.bgImageView.clipsToBounds = true
+        tabbarConfig()
 
     }
 
-
+    
+    func tabbarConfig()  {
+        
+        guard let tabbar = self.tabBarController?.tabBar else { return }
+        
+        tabbar.barTintColor = .white
+        tabbar.tintColor = #colorLiteral(red: 0.1135524884, green: 0.3487411737, blue: 0.4994378686, alpha: 1)
+        tabbar.unselectedItemTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        tabbar.backgroundColor = .white
+        
+    }
 
 }
 
