@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0EE7657899081DFCF4389580 /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2F77CDB6C0EAD50C391F1 /* Pods_TestApp.framework */; };
-		5DA2892927EA44860051614E /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2892827EA44860051614E /* MainTabbarController.swift */; };
 		5DAB22D027EA049D0058B6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB22CF27EA049D0058B6C7 /* AppDelegate.swift */; };
 		5DAB22D227EA049D0058B6C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB22D127EA049D0058B6C7 /* SceneDelegate.swift */; };
 		5DAB22D427EA049D0058B6C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB22D327EA049D0058B6C7 /* ViewController.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		3922ABFD07DBF8688C4DF8F2 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5DA2892827EA44860051614E /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		5DAB22CC27EA049D0058B6C7 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAB22CF27EA049D0058B6C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DAB22D127EA049D0058B6C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,14 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5DA2892727EA44860051614E /* CustomTabbar */ = {
-			isa = PBXGroup;
-			children = (
-				5DA2892827EA44860051614E /* MainTabbarController.swift */,
-			);
-			path = CustomTabbar;
-			sourceTree = SOURCE_ROOT;
-		};
 		5DAB22C327EA049D0058B6C7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +73,6 @@
 		5DAB22CE27EA049D0058B6C7 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				5DA2892727EA44860051614E /* CustomTabbar */,
 				5DAB22CF27EA049D0058B6C7 /* AppDelegate.swift */,
 				5DAB22D127EA049D0058B6C7 /* SceneDelegate.swift */,
 				5DAB22D327EA049D0058B6C7 /* ViewController.swift */,
@@ -128,7 +117,6 @@
 				5DAB22C827EA049D0058B6C7 /* Sources */,
 				5DAB22C927EA049D0058B6C7 /* Frameworks */,
 				5DAB22CA27EA049D0058B6C7 /* Resources */,
-				343BDAE2A412724CFD1C17B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,23 +196,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		343BDAE2A412724CFD1C17B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestApp/Pods-TestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestApp/Pods-TestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestApp/Pods-TestApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,7 +210,6 @@
 				5DAB22D027EA049D0058B6C7 /* AppDelegate.swift in Sources */,
 				5DAB7FA428947D3100EE9ED7 /* MyAccountVC.swift in Sources */,
 				5DAB7FA528947D3100EE9ED7 /* NewOrdersVC.swift in Sources */,
-				5DA2892927EA44860051614E /* MainTabbarController.swift in Sources */,
 				5DAB22D227EA049D0058B6C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
